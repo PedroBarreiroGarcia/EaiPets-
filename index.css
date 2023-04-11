@@ -1,6 +1,6 @@
  @font-face{
     font-family: Poppins;
-    src: url(../eaiPets_Projeto/Poppins/Poppins-Regular.ttf);
+    src: url(Poppins/Poppins-Regular.ttf);
 }
 
 *{
@@ -757,7 +757,7 @@ nav{
     width: 50%;
     height: 500px;
     box-sizing: border-box;
-    background-image: url(../eaiPets_Projeto/elementos_visuais/motoqueirp.jpg);
+    background-image: url(elementos_visuais/motoqueirp.jpg);
     background-size: cover;
 }
 
@@ -837,7 +837,7 @@ input::placeholder {
     height: 60px;
     margin: auto;
     float: left;
-    background-image: url(../eaiPets_Projeto/elementos_visuais/osso_cadastrar.png);
+    background-image: url(elementos_visuais/osso_cadastrar.png);
     background-size: cover;
     cursor: pointer;
 }
