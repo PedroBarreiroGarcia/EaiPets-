@@ -137,7 +137,7 @@ nav{
     margin-left: 150px;
     position: absolute;
     top: 15px;
-    background-image: url(../eaiPets_Projeto/elementos_visuais/cachorro_home_semFundo.png);
+    background-image: url(elementos_visuais/cachorro_home_semFundo.png);
     background-size: cover; 
 }
 
@@ -146,7 +146,7 @@ nav{
     height: 420px;
     float: left;
     margin-left: 430px;
-    background: url(../eaiPets_Projeto/logo_marcas/logo.png);
+    background: url(logo_marcas/logo.png);
     background-size: cover;
 }
 
