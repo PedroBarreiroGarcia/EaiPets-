@@ -1,0 +1,384 @@
+@font-face{
+    font-family: Poppins;
+    src: url(../eaiPets_Projeto/Poppins/Poppins-Regular.ttf);
+}
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #4F2777;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+}
+
+.pataMenu{
+    width: 50px;
+    height: 40px;
+}
+
+.pataMenu img{
+    width: 100%;
+    height: 100%;
+}
+
+.areaDePesquisa{
+    padding-left: 100px;
+}
+
+.barraDePesquisa{
+    width: 430px;
+    height: 40px;
+    color:#CCCCCC;
+    padding-left: 25px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 450px;
+    top: 20px;
+}
+
+input{
+    background-color: #C25DE2;
+    border-radius: 20px;
+    outline: 0;
+}
+
+input::placeholder {
+    color:#CCCCCC;
+  }
+
+.areaIcones{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    box-sizing: border-box;
+    position: absolute;
+    left: 1150px;
+    top: 25px;
+}
+
+.icones{
+    width:30%;
+    height: 100%;
+}
+
+img{
+    width:100%;
+    height: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #4F2777;
+    padding-top: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 5;
+}
+
+#nav{
+    width: 700px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.nav{
+    margin: auto;
+    padding: auto;
+    color: #FAB900;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav:hover{
+    text-decoration:underline ;
+}
+
+.linhaDivisoria{
+    width: 100%;
+    height: 2px;
+    background-color: #FAB900;
+    position: absolute;
+    z-index: 7;
+    margin-top: 50px;
+}
+
+.areaLogo{
+    width: 100%;
+    height: 390px;
+    background-color: #4F2777;
+    float: left;
+    display: flex;
+    position: absolute;
+    z-index: 0;
+}
+
+.imgCachorro{
+    width: 700px;
+    height: 450px;
+    float: left;
+    margin-left: 150px;
+    position: absolute;
+    top: 15px;
+    background-image: url(../eaiPets_Projeto/elementos_visuais/cachorro_home_semFundo.png);
+    background-size: cover;
+}
+
+.logo{
+    width: 760px;
+    height: 420px;
+    float: left;
+    margin-left: 430px;
+    background: url(../eaiPets_Projeto/logo_marcas/logo.png);
+    background-size: cover;
+}
+
+.carrosselPragandas{
+    width: 100%;
+    height: 250px;
+    float:left;
+    position: absolute;
+    z-index: 9;
+    margin-top: 390px;
+    box-sizing: border-box;
+}
+
+.espacoBanner{
+    width: 850px;
+    height: 180px;
+    margin-top: 35px;
+    margin-left: -750px;
+    padding-right:100%;
+    overflow: hidden;
+    position: absolute;
+    top: 550px;
+    left: 200px;
+}
+
+.espacoBanner .fotos{
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite; 
+}
+
+.espacoBanner .fotos img {
+    width: 19.9%;
+    height: 180px;
+    margin:0 50px 0 50px ;
+    border-radius: 30px;
+}
+
+@keyframes animacao{
+    0%{margin-left: 0;}
+    20%{margin-left: 0%;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.maisProcurados{
+    width: 100%;
+    height: 495px;
+    background-color: cornflowerblue;
+    margin-top: 640px;
+}
+
+.areaTituloProcurados{
+    width: 100%;
+    height: 120px;
+    margin-top: 350px;
+    display: flex;
+    flex-direction: row;
+}
+
+.detalheDireito{
+    width: 15%;
+    height: 120px;
+}
+
+.textoTitulo{
+    width: 70%;
+    height: 120px;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+#textTitulos{
+    font-size: 40px;
+    color: #4F2777;
+}
+
+.detalheEsquerdo{
+    width: 15%;
+    height: 120px;
+}
+
+.fotoGatinho{
+    width: 15%;
+    height: 130px;
+    position: absolute;
+    z-index: 5;
+    top: 700px;
+    left: 1200px;
+}
+
+.carrosselMaisProcurados{
+    width: 100%;
+    height: 375px;
+    background-color: #277770 ;
+}
+
+.racoesVendidas{
+    width: 100%;
+    height: 495px;
+    background-color: cornflowerblue;
+}
+
+.areaTituloRacoes{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+.foto_pote_racao{
+    width: 15%;
+    height: 120px;
+    position: absolute;
+    z-index: 5;
+    top: 1200px;
+    left: 5px;
+}
+
+.brinquedosAcessorios{
+    width: 100%;
+    height: 495px;
+    background-color: cornflowerblue;
+}
+
+.areaTituloBrinquedos{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+.foto_cachorro_bola{
+    width: 18%;
+    height: 180px;
+    position: absolute;
+    z-index: 5;
+    top: 1640px;
+    left: 1106px;
+}
+
+.produtosHigiene{
+    width: 100%;
+    height: 495px;
+    background-color: cornflowerblue;
+}
+
+.areaTituloHigiene{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+.cachorroBanho{
+    width: 15%;
+    height: 150px;
+    position: absolute;
+    z-index: 5;
+    top: 2180px;
+    left: 25px;
+}
+
+.detalheEsquerdoHigiene{
+    width: 16%;
+    height: 120px;
+}
+
+.detalheDireitoHigiene{
+    width: 14%;
+    height: 120px;
+}
+
+.areaTitulo{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(100, 237, 123);
+}
+.carrosselRacoes{
+    width: 100%;
+    height: 375px;
+    background-color: #277770 ;
+}
+
+.carrosselBrinquedos{
+    width: 100%;
+    height: 375px;
+    background-color: #277770 ;
+}
+
+.carrosselHigiene{
+    width: 100%;
+    height: 375px;
+    background-color: #277770 ;
+}
+
+.carrosselMarcas{
+    width: 100%;
+    height: 140px;
+    background-color: #277770 ;
+}
+
+
+.areaDelivery{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(100, 237, 123);
+}
+
+.areaCadastroPromocoes{
+    width: 100%;
+    height: 100px;
+    background-color: #4F2777;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #874ac5;
+}
