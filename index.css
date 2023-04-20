@@ -29,7 +29,7 @@ header{
 .pataMenu{
     width: 50px;
     height: 40px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .pataMenu img{
@@ -106,16 +106,116 @@ nav{
     cursor: pointer;
 }
 
-.nav:hover{
-    text-decoration:underline;
+#camada_cachorros{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 40px;
+    left: 350px;
+    background-color: #4F2777;
+    z-index: 5;
+    color: #FAB900;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border-left: 1px solid #FAB900;
+    border-right: 1px solid #FAB900;
+    border-bottom: 1px solid #FAB900;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
+
+
+#camada_gatos{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 40px;
+    left: 505px;
+    background-color: #4F2777;
+    z-index: 5;
+    color: #FAB900;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border-left: 1px solid #FAB900;
+    border-right: 1px solid #FAB900;
+    border-bottom: 1px solid #FAB900;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#camada_passaros{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 40px;
+    left: 620px;
+    background-color: #4F2777;
+    z-index: 5;
+    color: #FAB900;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border-left: 1px solid #FAB900;
+    border-right: 1px solid #FAB900;
+    border-bottom: 1px solid #FAB900;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#camada_peixes{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 40px;
+    left: 765px;
+    background-color: #4F2777;
+    z-index: 5;
+    color: #FAB900;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border-left: 1px solid #FAB900;
+    border-right: 1px solid #FAB900;
+    border-bottom: 1px solid #FAB900;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#camada_outros_pets{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 40px;
+    left: 880px;
+    background-color: #4F2777;
+    z-index: 5;
+    color: #FAB900;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border-left: 1px solid #FAB900;
+    border-right: 1px solid #FAB900;
+    border-bottom: 1px solid #FAB900;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .linhaDivisoria{
     width: 100%;
     height: 2px;
     background-color: #FAB900;
     position: absolute;
-    z-index: 7;
+    z-index: 1;
     margin-top: 50px;
     box-sizing: border-box;
 }
@@ -709,14 +809,17 @@ nav{
     100%{ transform: translateX(-100%);}
 }
 
-
-
 .areaDelivery{
     width: 100%;
     height: 500px;
     text-align: center;
     box-sizing: border-box;
     display: flex;
+    text-decoration: none;
+}
+
+a{
+    color: #29D468;
 }
 
  .areaTextoDelivery{
@@ -750,7 +853,8 @@ nav{
 .textoBotao{
     color: #fff;
     font-size: 20px;
-    padding-top: 25px;
+    padding-top: 15px;
+    text-decoration: none;
 }
 
 .areaImgDelivery{
@@ -818,6 +922,11 @@ input{
     margin: auto;
 }
 
+select{
+    border-radius: 20px;
+    outline: 0;
+}
+
 .qualPet{
     width: 250px;
     height: 40px;
@@ -850,7 +959,7 @@ input::placeholder {
 
 footer{
     width: 100%;
-    height: 300px;
+    height: auto;
     background-color: #4F2777;
     box-sizing: border-box;
     display: flex;
@@ -913,14 +1022,14 @@ footer{
 
 .iconeRedeSocial img{
     width: 100%;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 .iconeRedeSocialInsta{
-    width: 46%;
+    width: 47%;
     height: 55px;
     margin-top: -1px;
-    border-radius: 50px;
+    border-radius: 20px;
     cursor: pointer;
 }
 

@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E ai Pets!</title>
     <link rel="stylesheet" href="index.css" type="text/css">
-
+    <link rel="shortcut icon" href="logo_marcas/logo_icon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 <body>
    <main>
     <header>
         <div class="pataMenu">
-            <img src="elementos_visuais/pataAmarela.png" alt="">
+            <a href="#">
+                 <img src="elementos_visuais/pataAmarela.png" alt="">       
+            </a>
+
         </div>
 
         <div class="areaDePesquisa">
             <input type="text"maxlength="50" size="50" placeholder="E ai, o que seu pet precisa?" tabindex="2" class="barraDePesquisa">
-            <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+            
         </div>
 
         <div class="areaIcones">
@@ -38,22 +42,94 @@
 
     <nav>
         <section id="nav">
-            <div class="nav">
+            <div class="nav" onmouseover="show_cachorros()" onmouseout="someTudo()">
                 Cachorros
             </div>
-            <div class="nav">
+            <div class="nav" onmouseover="show_gatos()" onmouseout="someTudo()">
                 Gatos
             </div>
-            <div class="nav">
+            <div class="nav" onmouseover="show_passaros()" onmouseout="someTudo()">
                 Passáros
             </div>
-            <div class="nav">
+            <div class="nav" onmouseover="show_peixes()" onmouseout="someTudo()">
                 Peixes
             </div>
-            <div class="nav">
+            <div class="nav" onmouseover="show_outros_pets()" onmouseout="someTudo()">
                 Outros Pets
             </div>
         </section>
+
+        <div id="camada_cachorros">
+            Ração
+            <br>
+            Petiscos
+            <br>
+            Brinquedos
+            <br>
+            Acessórios
+            <br>
+            Roupas
+            <br>
+            Farmácia
+        </div>
+
+        <div id="camada_gatos">
+            Ração
+            <br>
+            Petiscos
+            <br>
+            Areias e Banheiros
+            <br>
+            Farmácia
+            <br>
+            Arranhadores
+            <br>
+            Roupas
+        </div>
+
+        <div id="camada_passaros">
+            Alimentação
+            <br>
+            Gaiolas e Viveiros
+            <br>
+            Brinquedos e Poleiros
+            <br>
+            Acessórios
+            <br>
+            Farmácia
+            <br>
+            Limpeza
+        </div>
+
+        <div id="camada_peixes">
+            Ração e Vitaminas
+            <br>
+            Aquários
+            <br>
+            Filtros de Aquários
+            <br>
+            Aquecedores
+            <br>
+            Plantas e Enfeites
+            <br>
+            Farmácia
+        </div>
+
+        <div id="camada_outros_pets">
+            Coelhos
+            <br>
+            Tartarugas
+            <br>
+            Furão
+            <br>
+            Hamster
+            <br>
+            Porquinho da Índia
+            <br>
+            Lagartos
+        </div>
+
+
     </nav>
 
     <div class="linhaDivisoria"></div>
@@ -117,7 +193,7 @@
             <div class="detalheDireito">
                 <img src="elementos_visuais/fundo_roxo_esquerdo_favoritos.png" alt="">
                 <div class="fotoGatinho">
-                    <img src="elementos_visuais/gatinho_rosto_sem_fundo.png" alt="">
+                    <img src="elementos_visuais/gatinho_rosto_sem_fundo.png" alt="" data-aos="fade-right" data-aos-duration="950">
                 </div>
             </div>
         </div>
@@ -494,7 +570,7 @@
             <div class="detalheEsquerdo"> 
                 <img src="elementos_visuais/fundo_racao_amarelo.png" alt="">
                 <div class="foto_pote_racao">
-                    <img src="elementos_visuais/poteRacao-semfundo.png" alt="">
+                    <img src="elementos_visuais/poteRacao-semfundo.png" alt="" data-aos="fade-right" data-aos-duration="950">
                 </div>
             </div>
             <div class="textoTitulo">
@@ -842,7 +918,7 @@
             <div class="detalheDireito">
                 <img src="elementos_visuais/fundo_direito_brinquedos.png" alt="">
                 <div class="foto_cachorro_bola">
-                    <img src="elementos_visuais/cachorro_brincando.png" alt="">
+                    <img src="elementos_visuais/cachorro_brincando.png" alt="" data-aos="fade-left" data-aos-duration="950">
                 </div>
             </div>
         </div>
@@ -1175,7 +1251,7 @@
             <div class="detalheEsquerdoHigiene"> 
                 <img src="elementos_visuais/fundo_esquerdo_higiene.png" alt="">
                 <div class="cachorroBanho">
-                    <img src="elementos_visuais/cachorro_escovando_dente.png" alt="">
+                    <img src="elementos_visuais/cachorro_escovando_dente.png" alt="" data-aos="fade-left" data-aos-duration="950">
                 </div>
             </div>
             <div class="textoTitulo">
@@ -1524,29 +1600,31 @@
             <div class="wrapperMarcas">
                 <div class="sliderMarcas">
                     <div class="slideMarcas">
-                        <img src="logo_marcas/beeps_logo.png" alt="">
+                        <img src="logo_marcas/logo_whiskas.png" alt="">
                         <img src="logo_marcas/pet_society_logo.png" alt="">
                         <img src="logo_marcas/soft_care_logo.png" alt="">
                         <img src="logo_marcas/premier_logo.png" alt="">
-                        <img src="logo_marcas/organnatc_logo.png" alt="">
                         <img src="logo_marcas/jambo_logo.jpeg" alt="">
-                        <img src="logo_marcas/kong_logo.png" alt="">
+                        <img src="logo_marcas/logo_pedigree.png" alt="">
                         <img src="logo_marcas/logo_royal_canin.webp" alt="">
                         <img src="logo_marcas/nandog_logo.png" alt="">
-                        <img src="logo_marcas/zeeDog_logo.png" alt="">
+                        <img src="logo_marcas/logo_magnus.png" alt="">
+                        <img src="logo_marcas/logo_purina.webp" alt="">
+                        <img src="logo_marcas/logo_nd.webp" alt="">
                     </div>
 
                     <div class="slideMarcas">
-                        <img src="logo_marcas/beeps_logo.png" alt="">
+                        <img src="logo_marcas/logo_whiskas.png" alt="">
                         <img src="logo_marcas/pet_society_logo.png" alt="">
                         <img src="logo_marcas/soft_care_logo.png" alt="">
                         <img src="logo_marcas/premier_logo.png" alt="">
-                        <img src="logo_marcas/organnatc_logo.png" alt="">
                         <img src="logo_marcas/jambo_logo.jpeg" alt="">
-                        <img src="logo_marcas/kong_logo.png" alt="">
+                        <img src="logo_marcas/logo_pedigree.png" alt="">
                         <img src="logo_marcas/logo_royal_canin.webp" alt="">
                         <img src="logo_marcas/nandog_logo.png" alt="">
-                        <img src="logo_marcas/zeeDog_logo.png" alt="">
+                        <img src="logo_marcas/logo_magnus.png" alt="">
+                        <img src="logo_marcas/logo_purina.webp" alt="">
+                        <img src="logo_marcas/logo_nd.webp" alt="">
                     </div>
         
                 </div>
@@ -1559,7 +1637,11 @@
         <div class="areaTextoDelivery">
             <h1 class="textoDeliveryGrande">Você sabia que agora entregamos aonde você desejar? </h1>
             <h2 class="textoDeliveryMenor">Faça já seu pedido pelo nosso whatsapp!</h2>
-            <div class="botaoWhats textoBotao">Clique aqui e para conversarmos!</div>
+            <a aria-label="Chat on WhatsApp" href="https://wa.me/551147947575">  
+                <button class="botaoWhats" >
+                    <p class="textoBotao">Clique aqui e para conversarmos!</p>
+                </button>
+            </a>
         </div>
         <div class="areaImgDelivery"> </div>
 
@@ -1572,11 +1654,19 @@
 
         <div class="areaBotoesCadastro">
             <div class="espacoEmail">
-                <input type="text"maxlength="50" size="50" placeholder="Digite seu e-mail..." tabindex="2" class="inserirEmail">
+                <input type="email" name="mail"  maxlength="30" size="30" placeholder="Digite seu e-mail..." tabindex="3" class="inserirEmail">
             </div>
             
             <div class="espacoSelecionePet">
-                <input type="text"maxlength="50" size="50" placeholder="E ai, qual seu pet?" tabindex="2" class="qualPet">
+                <select class="qualPet" autofocus="E ai, qual seu pet?" name="select">
+                    <!-- <option selected>E ai, qual seu pet?</option> -->
+                    <option>Cachorro</option>
+                    <option>Gato</option>
+                    <option>Pássaro</option>
+                    <option>Peixe</option>
+                    <option>Outro</option>
+                </select>
+                <!-- <input type="text"maxlength="50" size="50" placeholder="E ai, qual seu pet?" tabindex="2" class="qualPet"> -->
             </div>
 
                 <div id="img_osso">
@@ -1610,27 +1700,45 @@
             <h1 class="titFooter">Institucional</h1>
             <h2 class="textFooter">Quem somos</h2>
             <h2 class="textFooter">Canal de Ética e conduta</h2>
-            <h2 class="textFooter">Trabalhr Conosco</h2>
+            <h2 class="textFooter">Trabalhe Conosco</h2>
             <h2 class="textFooter">Política de Privacidade</h2>
         </div>
         <div class="areaContato">
             <h1 class="titFooter">Onde nos encontrar:</h1>
             <div class="imgRedesSocias">
-                <div class="iconeRedeSocialInsta"><img src="elementos_visuais/insta_teste_sem_fundo.png" alt=""></div>
-                <div class="iconeRedeSocial"> <img src="elementos_visuais/whatsapp.png" alt=""></div>
+                <div class="iconeRedeSocialInsta">
+                    <a href="https://www.instagram.com/eai.pets/">
+                        <img src="elementos_visuais/insta_teste_sem_fundo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="iconeRedeSocial">
+                    <a aria-label="Chat on WhatsApp" href="https://wa.me/551147947575"> <img alt="Chat on WhatsApp" src="elementos_visuais/whatsapp.png" /> </a>
+                </div>
             </div>
 
             <div class="endereco">
                 <p class="textoEndereco">E ai Pets! - Endereço: Av. Japão - Vila Vitoria, Mogi das Cruzes - SP, 08730-020<br>Copyright© 2023 E ai Pets! - Todos os direitos reservados</p>
             </div>
         </div>
+
+        
     </footer>
+    
+    
 
     <script src="slideragoravai.js"></script>
 
     <!-- carrossel bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
    </main> 
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
+    <script>
+        AOS.init();
+    </script>
 
 </body>
     
